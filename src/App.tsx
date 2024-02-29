@@ -1,11 +1,17 @@
-import './App.css';
-import Formulario from './components/Cabecalho/indes';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./Pages/MainPage";
+import { RecoilRoot } from "recoil";
 
 function App() {
   return (
-    <div className="App">
-      <Formulario />
-    </div>
+    <BrowserRouter>
+      <RecoilRoot>
+        <Routes>
+          <Route path="/" element={<MainPage />}/>
+        </Routes>
+      </RecoilRoot>
+    </BrowserRouter>
+      
   );
 }
 

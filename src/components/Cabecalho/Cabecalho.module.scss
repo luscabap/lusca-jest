@@ -1,5 +1,11 @@
-.container__header{
+.container{
     background-color: #4B69FD;
-    height: 40vh;
-    
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__participante{
+        margin-top: 14.6rem;
+    }
 }
