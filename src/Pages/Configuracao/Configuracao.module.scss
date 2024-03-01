@@ -1,0 +1,9 @@
+.container{
+    background-color: #4B69FD;
+
+    &__infos{
+        background-color: #FFF9EB;
+        border: 2px solid black;
+        border-radius: 4rem 4rem 0 0;
+    }
+}
