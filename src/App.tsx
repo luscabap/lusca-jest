@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Configuracao from "./Pages/Configuracao/Configuracao";
 import { RecoilRoot } from "recoil";
+import ConfiguracaoPage from "./Pages/Configuracao/ConfiguracaoPage";
 
 function App() {
   return (
     <BrowserRouter>
       <RecoilRoot>
         <Routes>
-          <Route path="/" element={<Configuracao />}/>
+          <Route path="/" element={<ConfiguracaoPage />}/>
         </Routes>
       </RecoilRoot>
     </BrowserRouter>

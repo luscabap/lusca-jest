@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { useAdicionarParticipante } from "../../state/hooks/useAdicionarParticipante";
 import useMensagemDeErro from "../../state/hooks/useMenagemDeErro";
 import styles from './Formulario.module.scss'
+import { listDeParticipantesState } from "../../state/atom";
 
 const Formulario = () => {
     const [nome, setNome] = useState("");

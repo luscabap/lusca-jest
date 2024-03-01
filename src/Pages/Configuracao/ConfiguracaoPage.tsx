@@ -1,9 +1,9 @@
 import Cabecalho from "../../components/Cabecalho";
 import Formulario from "../../components/Formulario/Formulario";
 import Rodape from "../../components/Rodape/Rodape";
-import styles from './Configuracao.module.scss'
+import styles from './ConfiguracaoPage.module.scss'
 
-const Configuracao = () => {
+const ConfiguracaoPage = () => {
     return (
         <div className={styles.container}>
             <Cabecalho />
@@ -15,4 +15,4 @@ const Configuracao = () => {
     )
 };
 
-export default Configuracao;
+export default ConfiguracaoPage;

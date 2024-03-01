@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import { RecoilRoot } from "recoil";
-import Configuracao from "./Configuracao";
+import ConfiguracaoPage from "./ConfiguracaoPage";
 
 const mockNavegacao = jest.fn();
 
@@ -16,7 +16,7 @@ describe('a página de configuração', () => {
     test('deve ser renderizada corretamente', () => {
         const { container } = render (
             <RecoilRoot>
-                <Configuracao />
+                <ConfiguracaoPage />
             </RecoilRoot>
         )
 
