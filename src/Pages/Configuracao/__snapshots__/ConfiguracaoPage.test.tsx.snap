@@ -32,12 +32,28 @@ exports[`a página de configuração deve ser renderizada corretamente 1`] = `
         <div
           class="container__containerBotoes"
         >
-          <input
-            class="container__containerBotoes__input"
-            placeholder="Insira os nomes dos participantes"
-            type="text"
-            value=""
-          />
+          <div
+            class="container__containerBotoes__containerInput"
+          >
+            <svg
+              class="container__containerBotoes__containerInput__icone"
+              fill="currentColor"
+              height="32"
+              viewBox="0 0 256 256"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+              />
+            </svg>
+            <input
+              class="container__containerBotoes__containerInput__input"
+              placeholder="Insira os nomes dos participantes"
+              type="text"
+              value=""
+            />
+          </div>
           <button
             class="container__containerBotoes__botao"
             disabled=""
@@ -47,15 +63,34 @@ exports[`a página de configuração deve ser renderizada corretamente 1`] = `
         </div>
         
       </form>
+      <ul
+        class="lista"
+      />
       <footer
         class="container"
       >
-        <button
-          class="container__botao"
-          disabled=""
+        <div
+          class="container__containerBotao"
         >
-          Iniciar brincadeira!
-        </button>
+          <svg
+            class="container__containerBotao__icone"
+            fill="#FFF"
+            height="32"
+            viewBox="0 0 256 256"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"
+            />
+          </svg>
+          <button
+            class="container__containerBotao__botao"
+            disabled=""
+          >
+            Iniciar brincadeira!
+          </button>
+        </div>
         <img
           alt="Imagem de 2 sacolas verde e azul"
           src="sacolas.png"

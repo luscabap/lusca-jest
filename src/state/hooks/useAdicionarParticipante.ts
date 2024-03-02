@@ -14,8 +14,10 @@ export const useAdicionarParticipante = () => {
             setTimeout(() => {
                 setErro("");
             }, 5000)
+            
+            return 
         }
-
         return setLista(listaAtual => [...listaAtual, nomeDoParticipante])
+
     }
 }

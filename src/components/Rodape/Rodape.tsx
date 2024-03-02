@@ -3,6 +3,7 @@ import { useListaDeParticipantes } from "../../state/hooks/useListaDeParticipant
 import styles from './Rodape.module.scss';
 import sacola from '../assets/sacolas.png';
 import { useSorteador } from "../../state/hooks/useSorteados";
+import { Timer } from "@phosphor-icons/react";
 
 const Rodape = () => {
     const participantes = useListaDeParticipantes();
@@ -18,11 +19,14 @@ const Rodape = () => {
 
     return (
         <footer className={styles.container}>
-            <button 
-                disabled={participantes.length < 3}
-                onClick={iniciar}
-                className={styles.container__botao}
-            >Iniciar brincadeira!</button>
+            <div className={styles.container__containerBotao}>
+                <Timer size={32} color="#FFF" className={styles.container__containerBotao__icone}/>
+                <button 
+                    disabled={participantes.length < 3}
+                    onClick={iniciar}
+                    className={styles.container__containerBotao__botao}
+                >Iniciar brincadeira!</button>
+            </div>
             <img src={sacola} alt="Imagem de 2 sacolas verde e azul" />
         </footer>
     )
