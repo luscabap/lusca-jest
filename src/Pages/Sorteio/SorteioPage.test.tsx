@@ -4,6 +4,7 @@ import { RecoilRoot } from "recoil";
 import { useListaDeParticipantes } from "../../state/hooks/useListaDeParticipantes";
 import SorteioPage from "./SorteioPage";
 import { useResultadoDoSorteio } from "../../state/hooks/useResultadoDoSorteio";
+import { useNavigate } from "react-router-dom";
 
 jest.mock('../../state/hooks/useListaDeParticipantes', () => {
     return {
@@ -14,6 +15,13 @@ jest.mock('../../state/hooks/useListaDeParticipantes', () => {
 jest.mock('../../state/hooks/useResultadoDoSorteio', () => {
     return {
         useResultadoDoSorteio: jest.fn()
+    }
+});
+
+const mockNavegacao = jest.fn();
+jest.mock('react-router-dom', () => {
+    return {
+        useNavigate: () => mockNavegacao
     }
 })
 
@@ -66,6 +74,20 @@ describe('Na página de sorteio', () => {
         const amigoSecreto = screen.getByRole('alert');
 
         expect(amigoSecreto).toBeInTheDocument();
+    });
+
+    test('a página é direcionado a página principal quando clicado botão', () => {
+        render(
+            <RecoilRoot>
+                <SorteioPage />
+            </RecoilRoot>
+        );
+
+        const botaoHome = screen.getByText('Página Principal');
+
+        fireEvent.click(botaoHome);
+        expect(mockNavegacao).toHaveBeenCalledTimes(1);
+        expect(mockNavegacao).toHaveBeenCalledWith('/');
     })
     
 });

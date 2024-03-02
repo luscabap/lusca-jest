@@ -15,7 +15,7 @@
       color: #4b69fd;
       font-size: 32px;
       font-weight: 600;
-    };
+    }
 
     &__form {
       display: flex;
@@ -44,20 +44,26 @@
         font-weight: 600;
         transition: 0.1s;
 
-        &:hover{
+        &:hover {
           transition: 0.1s;
           background-color: #4b69fd;
         }
       }
 
-        &__icon {
-          padding-left: 1.5rem;
-        }
+      &__icon {
+        padding-left: 1.5rem;
       }
-    };
+    }
 
-    &__amigoSecreto{
-        color: #FE652B;
-        font-size: 25px;
+    &__amigoSecreto {
+      color: #fe652b;
+      font-size: 25px;
+    }
+    
+    &__home {
+
+      cursor: pointer;
     }
   }
+
+}

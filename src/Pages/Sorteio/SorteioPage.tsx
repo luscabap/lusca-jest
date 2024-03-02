@@ -3,8 +3,8 @@ import { useListaDeParticipantes } from "../../state/hooks/useListaDeParticipant
 import { useResultadoDoSorteio } from "../../state/hooks/useResultadoDoSorteio";
 import Cabecalho from "../../components/Cabecalho";
 import styles from './SorteioPage.module.scss'
-import { Alien } from "@phosphor-icons/react";
 import aviao from '../../components/assets/aviao.png'
+import { useNavigate } from "react-router-dom";
 
 const SorteioPage = () => {
 
@@ -19,6 +19,12 @@ const SorteioPage = () => {
             setAmigoSecreto(resultado.get(participanteDaVez)!);
         }
     };
+
+    const navegarPara = useNavigate();
+
+    const iniciar = () => {
+        navegarPara('/')
+    }
 
 
     const resultado = useResultadoDoSorteio();
@@ -48,6 +54,7 @@ const SorteioPage = () => {
                 </form>
                 {amigoSecreto && <p role="alert" className={styles.container__amigoSecreto}>{amigoSecreto}</p>}
                 <img src={aviao} alt="Avião de papel verde voando" />
+                <p onClick={iniciar} className={styles.container__home}>Página Principal</p>
             </section>
         </div>
     )
