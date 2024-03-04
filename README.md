@@ -28,7 +28,7 @@ Os testes criador foram:
 - Teste Página de sorteio: valida todos os participantes aparecerem na tela quando solicitado pelo usuário e o redirecionamento para a página principal quando clicado no botão "Página Principal"; 
 - Teste Hook de Sorteio: valida que cada participante não tire o seu próprio nome;
 
-🌎 Deploy do projeto: [https://lusca-projeto-organo.vercel.app/](https://lusca-amigo-secreto.vercel.app/)
+🌎 Deploy do projeto: [https://lusca-amigo-secreto.vercel.app/](https://lusca-amigo-secreto.vercel.app/)
 
 ---
 
@@ -36,8 +36,8 @@ Os testes criador foram:
 
 _WEB_
 
-![GK1](https://github.com/luscabap/lusca-jest/blob/main/public/assets/web_01.png)
-![GK1](https://github.com/luscabap/lusca-jest/blob/main/public/assets/web_02.png)
+![GK1](https://github.com/luscabap/lusca-jest/blob/main/public/web_01.png)
+![GK1](https://github.com/luscabap/lusca-jest/blob/main/public/web_02.png)
 
 ---
 
