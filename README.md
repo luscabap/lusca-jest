@@ -17,16 +17,16 @@ O projeto foi desenvolvido utilizando:
 
 O site funciona com a inserção de no mínimo 3 nomes para a realização do sorteio de amigo secreto e depois a exibição desse sorteio.
 
-Os testes criador foram:
-- Teste Página Principal: valida a renderização correta da página;
-  - Teste Formulário: valida quando o input estiver vazio, novos participantes não poderão ser adicionados, a adição de um participante, nomes duplicados e mensagem de erro na adição de um participante novo;
-  - Teste Lista de Participantes: descreve 2 cénarios:
+Os testes criados foram:
+- Teste da Página Principal: garante que a página seja renderizada corretamente.
+ - Teste do Formulário: verifica se o input vazio impede a adição de novos participantes, detecta duplicatas de nomes e exibe mensagens de erro quando necessário.
+- Teste Lista de Participantes: descreve 2 cénarios:
     - Quando a lista estiver vazia: deverá ser renderizada sem elementos;
     - Quando a lista estiver preencida corretamente: rendiza todos os participantes;
-  - Teste Rodapé: valida quando existe participantes suficientes a permissão do botão para Iniciar a Brincadeira e quando a brincadeira for iniciada, o direcionamento do usuário para a tela de sorteio.
-  
-- Teste Página de sorteio: valida todos os participantes aparecerem na tela quando solicitado pelo usuário e o redirecionamento para a página principal quando clicado no botão "Página Principal"; 
-- Teste Hook de Sorteio: valida que cada participante não tire o seu próprio nome;
+- Teste do Rodapé: confirma se o botão para iniciar a brincadeira só é habilitado quando há participantes suficientes e se o redirecionamento para a tela de sorteio ocorre corretamente após o início da brincadeira.
+- Teste da Página de Sorteio: assegura que todos os participantes sejam exibidos quando solicitado e que o redirecionamento para a página principal funcione corretamente quando o botão "Página Principal" é clicado.
+- Teste do Hook de Sorteio: verifica se nenhum participante seleciona o próprio nome durante o sorteio.
+
 
 🌎 Deploy do projeto: [https://lusca-amigo-secreto.vercel.app/](https://lusca-amigo-secreto.vercel.app/)
 
